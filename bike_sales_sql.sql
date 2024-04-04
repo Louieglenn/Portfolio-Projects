@@ -264,19 +264,3 @@ LIMIT 10;
 
 
 
-
-
--- experiment
-
-SELECT 
-    COALESCE(subcategory_name, 'Grand Total') AS subcategory_name,
-    SUM(order_quantity) AS total_quantity,
-    SUM(order_quantity * unit_price_sold) AS total_sale
-FROM
-    sale s
-    LEFT JOIN product p ON p.product_key = s.product_key
-    LEFT JOIN product_subcategory b ON b.product_subcategory_key = p.product_subcategory_key
-GROUP BY 
-    subcategory_name WITH ROLLUP
-ORDER BY 
-    total_sale asc;
