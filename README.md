@@ -1,5 +1,7 @@
-This file contains my portfolio project - Data Analysis of Adventure Works Bike Sales Dataset
-using Python Pandas, Numpy, Matplotlib and Seaborn are as a visualizing tool.
+This file contains my portfolio projects.
 
--The skills involved in this project are Data Cleaning, Data Manipulation, Data Analyzation and Visualization.
-
+-Microsoft Excel
+-Power Query
+-PowerBI
+-Python (Pandas, Seaborn, Matplotlib)
+-SQL (MySql)
